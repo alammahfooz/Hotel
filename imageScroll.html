@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Orbitron"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>imageScroll</title>
+    <style>
+      .HotelIntro{
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        align-items: center;
+      
+      }
+      .HotelIntro img{
+        width: 26rem;
+        height: 26rem;
+        display: flex;
+        padding: 3rem;
+        border-radius: 50%;
+      }
+      .HotelIntro h1 span, h2{
+        color: #976107;
+      }
+    .HotelIntro button{
+      background-color: #976107;
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border: none;
+      border-radius: 0.3rem;
+  /* margin: 1.6rem 6.5rem; */
+    }
+      #myparallex {
+      
+        height: 500px;
+        /* line-height: 400px; */
+        color: rgb(66, 65, 65);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
+      }
+      p {
+        text-align: left;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <div id="myparallex" data-image="https://picsum.photos/1920/1080/?random">
+      <div class="HotelIntro">
+        <img src="../images/Jeevakhotelbackground.jpg" alt="">
+
+        <div class="">
+        <h2>Welcome to ________</h2>
+        <h1>JEEVAK HOTEL IS A <span>WELL RECOGNIZED</span>
+          HOTEL WITH ALL THE THREE STAR AMENITIES AVAILABLE.</h1>
+          <button>Book Now</button></div> 
+      </div>
+    </div>
+   
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/jquery.mkParallax.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myparallex").mkParallax();
+      });
+    </script>
+    <!-- <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-36251023-1"]);
+      _gaq.push(["_setDomainName", "jqueryscript.net"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script> -->
+  </body>
+</html>
